@@ -128,9 +128,12 @@ body {
 
     .box {
         width: 10%;
+        font-size: 18px;
     }
     img{
         width: 150px;
         height: 120px;
+        
     }
+
 }

@@ -38,10 +38,10 @@ let timer = setInterval(function(){
     time.innerHTML =`Time: ${timeCount}s`
 
     if(timeCount < 1){
-        time.innerHTML = `Time: 0s`
+        time.innerHTML = `Time: 0s`;
         clearInterval(timer)
         allowClick = false;
-        // output.innerHTML= 'Sorry! Try Again!'
+        output.innerHTML= 'Sorry! Try Again!'
     }
 
 },1000)
@@ -51,7 +51,7 @@ boxs.forEach((box, index) => {
        if(allowClick) {
          findingTreasure(box, index)
          
-       }  
+       } 
     })
  
 })
@@ -67,6 +67,7 @@ const findingTreasure = (box, index) => {
         box.innerHTML =`<img src="treasure-png.png" width='250px' height='150px'></img>`
         allowClick = false;
         clearInterval(timer)
+        start.style.background = 'green';
     }else{
         box.style.background ='red';
         box.innerHTML ='Wrong Box'
@@ -77,6 +78,7 @@ const findingTreasure = (box, index) => {
 
 // Start Button
 start.onclick = () => {
+    start.style.background = 'rgb(58, 247, 58)';
     allowClick = true;
     output.innerHTML='';
     timeCount = 8;
@@ -91,6 +93,7 @@ start.onclick = () => {
         time.innerHTML =`Time: ${timeCount}s`
     
         if(timeCount < 1){
+            start.style.background = '#008000';
             time.innerHTML = `Time: 0s`
             clearInterval(timer)
             allowClick = false;
