@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@700&display=swap');
+
+body {
+    font-family: 'Bangers', 'Roboto',Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.wrapper {
+    width: 80%;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 1rem; */
+    text-align: center;
+
+}
+
+.title h1 {
+    font-size: 50px;
+    letter-spacing: 10px;
+    color: green;
+}
+
+ .dark {
+    font-family: 'Roboto';
+    background: green;
+    border: none;
+    padding: 10px;
+    margin-left: 250px;
+    border-radius: 7px;
+    color: white;
+    cursor:pointer;
+    width: 20%;
+}
+
+.light {
+    display: none;
+    font-family: 'Roboto';
+    background: white;
+    border: none;
+    padding: 10px;
+    margin-left: 250px;
+    border-radius: 7px;
+    color: green;
+    cursor:pointer;
+    width: 20%;
+}
+
+.start {
+    font-family: 'Roboto';
+    background: green;
+    border: none;
+    padding: 10px;
+    border-radius: 7px;
+    color: white;
+    cursor:pointer;
+    width: 20%;
+}
+
+.display-section {
+    display: flex;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto';
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px auto 10px;
+    letter-spacing: 4px;
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    width: 15%;
+    background: green;
+    padding: 25px;
+    margin: 20px;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+
+.dark-mode {
+    background: black;
+    color: white;
+}
+
+
+
+@media (max-width:550px){
+    .title{
+        flex-direction: column-reverse;
+    }
+
+    .dark, .light, .restart {
+        margin-left: 200px;
+        width: 35%;
+    }
+
+    .display-section{
+        flex-direction: column;
+        
+    }
+
+    .display-section div {
+        margin-top: 20px;
+    }
+
+    .box {
+        width: 10%;
+    }
+    img{
+        width: 150px;
+        height: 120px;
+    }
+}
