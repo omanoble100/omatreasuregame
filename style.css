@@ -108,11 +108,14 @@ body {
 
 
 @media (max-width:550px){
+    .wrapper {
+        width: 95%;
+    }
     .title{
         flex-direction: column-reverse;
     }
 
-    .dark, .light, .restart {
+    .dark, .light, .start {
         margin-left: 200px;
         width: 35%;
     }
@@ -127,8 +130,9 @@ body {
     }
 
     .box {
-        width: 10%;
+        width: 5%;
         font-size: 18px;
+        padding: 10px 25px;
     }
     img{
         width: 150px;
